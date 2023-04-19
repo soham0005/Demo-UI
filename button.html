@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="tab.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Fetch-Send and Retrieve</title>
+  </head>
+  <a href = "home.html">
+<button data-text="Swift Share" class="button">
+    <span class="actual-text">&nbsp;Swift Share&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;Swift Share&nbsp;</span>
+  </button>
+</a>
+</html>
+
+  <style>
+  .button {
+    top:400px;
+    left:800px;
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #af5ae7;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+  }
+
+  </style>  
