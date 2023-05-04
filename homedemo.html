@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swift Share - Send and Save</title>
     <link rel="stylesheet" href="./home.css">
-    <script src = "script.js"></script>
 </head>
 <body>
     <div class="container">
         <nav>
             <h1>Swift Share</h1>
-            <script src = "script.js"></script>
             <main>
                 <h3>
                 <a href="">Home</a>
@@ -30,7 +28,18 @@
                 </h4>
                 </p>
             </div>
-
+            <form class="form">
+                <span class="form-title">Upload your file</span>
+                <p class="form-paragraph">
+                    File should be an image
+                  </p>
+                 <label for="file-input" class="drop-container">
+                <span class="drop-title">Drop files here</span>
+                or
+                <input type="file" accept="image/*" required="" id="file-input">
+              </label>
+              </form>
+              
             <div class="image">
                 
                 <img src="Folder-amico.svg" class="home-img" alt="">
